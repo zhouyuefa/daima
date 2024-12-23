@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>手机号注册</title>
+  <style>
+    body{
+      margin: 0;
+    }
+    .con{
+      position: fixed; /* 或者absolute，取决于布局需求 */
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: url("/png/hb3-CJ3fYxQ-.png") no-repeat center center fixed;
+      background-size: cover;
+    }
+    .phone-register-con{
+      width: 410px;
+      height: 334px;
+      background-image: url("/png/phone_register_bg-CqzaE9Su.png");
+      background-size: cover;
+      margin: 0 auto;
+      position: relative;
+      top: 579px;
+    }
+    .phone-input{
+      width: 339px;
+      height: 49px;
+      background: #fff;
+      border-radius: 7px;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      position: relative;
+      top: 71px;
+    }
+    .phone-input-icon{
+      width: 27px;
+      height: 27px;
+      margin-left: 12px;
+    }
+    .phone-input-text{
+      border: none;
+      margin-left: 12px;
+    }
+    .phone-input-text:focus-visible{
+      border: none;
+      outline: none;
+    }
+    .line{
+      width: 2px;
+      height: 20px;
+      margin-left: 12px;
+      border-radius: 0.5px;
+      background: #383A550D;
+    }
+    .validCode-input{
+      top: 81px;
+    }
+    .validCode-btn{
+      border: none;
+      background-color: #fff;
+      color: #333333FF;
+      font-size: 14px;
+    }
+    .register-btn{
+      top: 158px;
+      width: 240px;
+      height: 50px;
+      background-image: url("/png/register_btn-CrKWETBL.png");
+      background-size: cover;
+      border-radius: 25px;
+      text-align: center;
+      color: #fff;
+      font-size: 22px;
+    }
+    .btn{
+      width: 100%;
+      background: transparent;
+      border: none;
+      color: #fff;
+      font-size: 18px;
+    }
+    .user-avatar-con{
+      width: 245px;
+      margin: 0 auto;
+      position: relative;
+      top: 613px;
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      color: #fff;
+      border-radius: 50px;
+      /* 0deg表示从下到上的渐变，90deg表示从左到右的渐变。180deg是从上到下，270deg（或- 90deg）是从右到左。 */
+      background: linear-gradient(270deg, #CC7E4400, #CC7E443D);
+    }
+    .user-avatar{
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+    }
+    .user-avatar-text{
+      margin-left: 12px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="con">
+    <div class="phone-register-con">
+      
+      <div class="phone-input">
+        <img class="phone-input-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAABsCAYAAACPZlfNAAAAAXNSR0IArs4c6QAABQFJREFUeF7tnc9rXFUUx895SWZSWwRtEZrEgqC4KFrB1XtJSSguBZGZqbWp4iq7uihY+y+0gou6EFwJGtM6E0QK4qoMhXnPjWjJyioIalIEq5uaZgbzjjywUAu+uScz905P/M76/vje7+d837vvMdzHhJ8pB9iUWoglADNWBAAGYMYcMCYXCQMwYw4Yk4uEAZgxB4zJRcIAzJgDxuQiYQBmzAFjcpEwADPmgDG5SBiAGXPAmFwkDMCMOWBMLhIGYP0daDQalY0NellEXiKS54l4SkT29e85uhbMfJtINoj4a2b+fGqKPms2m73QioInLI7rDSI6TyRPhF7scOfjH4no7SxrNYc7bvlowYA1Go2x9XV5V0TeDLlA33Mx88XpaT7TbDa3fc9VjB8MWJLUL4rI6RCLCj0HM7+Xpq0ghRgEWJLUT4jISmgjQ87HzK+maeuS7zm9A1tYeGOy17v9nYgc8r2YUY7PzD9VKvuebrc/3PKpwzuw2dn6Yp7Lxz4X8aCMHUV8qtNpLfvU4x1YktSbIlL3uYgHZWxmbqVpq9gFe/t5BxbH9e+J5Mk+KxBmfl+ElqPo4bXDh8e9XlZc3bxx449qr0fPEOWviPBpIon6bLp/yLLWU67j76RdAGC1P4nooRJxEkVjL3Y6n36xkwWE6jM3d/yFPM+/FJGxkjk3s2x1r09NIYBJ2QJCbokHNTKOaxeI6K2ycbJs1aunXgcvFhbHtVJgUTQedzqXvxrUzBD9k6TxnEj+zf8a2IED+/deufLBZgjDB51jaWlpYm3tVrfshcOuT9jMTDQe6rXOoMCK/klS/6vsPgZgw3B5iGMAGBKmKqeRbzpwSVTx8v+2vt8uEcAATOeAsjXuYbiHqUoG9zCVXdjWE+5huopBwnR+4cEZCdNVDBKm8wsJQ8J0FYOE6fxCwpAwXcUgYTq/kDAkTFcxSJjOLyQMCdNVDBKm8wsJQ8J0FYOE6fxCwpAwXcUgYTq/kDAkTFcxSJjOLyQMCdNVDBKm8wsJQ8J0FYOE6fxCwpAwXcUgYTq/kDAkTFcxphK2sLA40+t13yGSeRE6qFvqv1sz000iblcq1bPt9vIvrmPhv/WO/60vYHW73etE8qiruW7t+PdqtXrEFRqAOQJLkvqKiJxwg6Brxcwrado66dILwJyB1TYGvQz+F5Di8pimq1MA5nDsg+umI0nq6yLiZKqL8fe2YeaNNG1Nu/RDwhwTFse14tAtp8uWi/H3tfkky1YXXfoBmCOwY8ca03fu5NeJaL+LsYo2t/bsiY5cvdpcd+kDYI7ACjMLaFtbcl5E5pl5oG29iNxk5vbkJJ9zhVVoADAFMJcE+G4DYACmqrGRv+mYmJg4dO3apZ9VqkfUOElee0xk89ey6Xf90UXM0etp2vxoRAxU087O1o7nOV3e7cBKD7gsHlorlcqz7fbKbyr3Ajeemzv5SJ73vu1z2PRuOOCy/xGyxYMrM52tVrmt2bGFYHb06KmD29tb80RyQYQeL5+T7R8hi0Oah1tW3jcdOAbdGDB8aMAYsH/eDuBTHkPi5v2SeFcnPpYzHGLBgOFzVMaA3ZWLD74NBi5Ywu6ViU8q7hzaSIDtXC56ApixGgAwADPmgDG5SBiAGXPAmFwkDMCMOWBMLhIGYMYcMCYXCQMwYw4Yk4uEAZgxB4zJRcIAzJgDxuQiYQBmzAFjcpEwADPmgDG5fwPfH3ea1MJCaQAAAABJRU5ErkJggg==" >
+        <span class="line"></span>
+        <input type="text" placeholder="输入手机号,加入都可道" class="phone-input-text">
+      </div>
+
+      <div class="phone-input validCode-input">
+        <img class="phone-input-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAAAXNSR0IArs4c6QAABaRJREFUaEPtWWuIVGUYft5znHW9peEaCEZQ/gjE9cemc3NpXNHaUtO5lLnYnyAs7KKQSTfS6odJWUSYESTortZc1ktmKciU7jmzrguhklAaQVJhDYnpmjs735vf7s5yZpzbOTPbjjLfv5nvvTzP95zvPe/3HcItOugW5YUqsZtN2apiVcUqZAWqj2KFCFE0jGFXzG731asqtTDzYxIVEX3OTDt1PXiqaJQWDIeF2OzZj9xps9lWMKMF4Jk5cJ0iotZEItHW1bX3VwvY87qUjZjHs3RSb68aYOYWZmokglIMWGYIInzHjLba2mQwGt1zsRi/QjYlEZs+vXn05MljFykKVgB4GMDoQgkLzF8DcEAItMXjPV+ePXtQ/rY0rBAjh8N/v6JA7hs/gEmFMhPxX4DyBcAEkFS1rpAPgItEFBICrbFY6FsAXITPkIlpYk6nbx+AxUUk6SHCfgkskfjl6+7u7oT0aWh4ymazxR8cWJj+OGOLiLVf18NLirAriZiQxS1HkiQRHRGCW1U1Eeno2PdPPjBu95IJyaTNqyj9VbMJgJrDnnU9XNSeTflbUSzLI0HdzNxqs/Huo0cjv5tZ2ZRtY6N3aiJBy4lIVtKGzBi6HjaF1ZSxTOZ0+tKIqSrNO3YsFLVCJpeP2+2dJwQdMc7/78SIktM1bc+5chJzuZbew6yerRLLsqolP4rlUMzj8dRGo9F/U/huBcXkO3EzEb8A4Me+PqWpqyv4x81OTHE6fZ8AeHKoRBOt17TQpookNneu9+6+PppRWzvhcDS6fejxSt8GAdXpFJ8BWGn8n5l8sVgoUnHE5BFFUdAJoBbASSKxQNPaLxjBezyeUb29dTuYeXnGnt+i6+G18r+KI+Zy+dYy410D4DO9vTy/u3vgpS3bqZqa+O7rpL3pSvGmWCyyvmKLh9vtmyEETgwqlsL5kxDcFI9f/XPKlLHBG/tMflPXI68biVacYoOdyQMA2gGMMYD9mYjOMfMCIwEivKpp4bczX0MVSWxgjwSahBD7iDAuV1ML4CVdD2/ONl+xxCRYt9vfKAQfADAhA7zsNdfoeviDXG3YSBGTJdxwUlbqc13MuFwBpxDiIBEmShLyGkBRsFrTwlvz9ZZz5iybparK9wabq7oeLubcNuRipaU6A+DeVARmPB2LhT/OBdTt9t0nj/oA1RHR85oW3FGoYXY6fasBfGiw+0HXwzMK+aXtXzPGg8XhU2O3AOC0rs+cBbwhD6Alj0AgoJ4/L04bFw+gbboeWmUmuGnF7Hb/QkXhbzKSrMtVCMyAkbYOh/9lIk6rlERivqa1p53PCsU1TWxANe8JgIyn3AQRLdK00KFCCfPNu92+h4TAXgCjDHaduh52mI1riZgsCsziaPodBfcoirq0oyN42CyIQaWaiTic8f7rI2KXpkW6zMa0RGxwr20AkNYxAEgw47l8xSQbQJfL/wwzvw/AllYAiF/TtMhbZklJe8vEpK/L5dvFjP47+YyxK5kUzx4/3h7PB6qhYXFdTU3NRwAezbQjwk5NC6d1/2YIlkIMslO/dm1yG4BAlqQXBsp7SDa9Nwyn0/f49ctWqdId2RZm2jRlZTAYTJohk6a2VUeDn+Jw+DcQiVfkt5Qs8TRmXheLRTrknN2+bK6i0DsAOTNtB17gvFHTIhvN3vzeoHgZiPWHcDj8XiLenqWFktOyjUpVzIU5tsAlInpC00KyKpY8SnoUM7O7XN67mJWtADebQcaMr5LJvlXl/JxUVmIpMg6Hv4WIZec+NT9B+g0QL+p6RO7Tso5hISYR1tevHDd+/JU1zCSP+7dnoP6biN+7fPnylpMnD10pK6PBYMNGLAXWbm++jWjMKiJK9XpbhejZ1tl58NJwEErFHHZiwwk+X+wqsZFaeat5q4pZXbmR8qsqNlIrbzVvVTGrKzdSfv8B585zVXXKVM4AAAAASUVORK5CYII=" >
+        <span class="line"></span>
+        <input type="text" placeholder="输入验证码" class="phone-input-text">
+        <button type="text" class="validCode-btn">获取验证码</button>
+      </div>
+
+      <div class="phone-input register-btn">
+        <button class="btn">点击注册</button>
+      </div>
+
+    </div>
+      
+    <div class="user-avatar-con">
+      <img src="/png/user_avatar-y4sVXad5.png" class="user-avatar">
+      <span class="user-avatar-text">来自哈密瓜推荐</span>
+    </div>
+  </div>
+</body>
+</html>

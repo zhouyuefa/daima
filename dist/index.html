@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>都可道 - 平台管理</title>
+    <!-- <link rel="stylesheet" href="/src/assets/loading/style.css"> -->
+    <style>
+      :root {
+        --ui-background: 255 255 255;
+      }
+      .dark {
+        --ui-background: 49 49 50;
+      }
+      html, body, #app{
+        height: 100%; overflow: hidden;
+        transition-property: filter;
+        transition-duration: 1s;
+      }
+      .app-loading {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+  
+      .app-loading__logo {
+        width: 78px; padding-left: 5px; margin-top: -5%;
+      }
+  
+      .app-loading-text {
+        position: relative;
+        margin-top: 1rem;
+      }
+  
+      .app-loading-preloader,
+      .app-loading-viewtext {
+        font-size: 3.5rem;
+        color: #ddd;
+        font-weight: bold;
+      }
+  
+      .app-loading-viewtext-container {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        letter-spacing: 4.3px;
+        top: -5px;
+      }
+  
+      .app-loading-viewtext {
+        color: #333;
+        animation: loader 4s infinite;
+        transform: rotateY(-90deg);
+      }
+  
+      .app-loading-viewtext-container span:nth-child(1) {
+        animation-delay: 0.2s;
+      }
+      .app-loading-viewtext-container span:nth-child(2) {
+        animation-delay: 0.4s;
+      }
+      .app-loading-viewtext-container span:nth-child(3) {
+        animation-delay: 0.6s;
+      }
+      .app-loading-viewtext-container span:nth-child(4) {
+        animation-delay: 0.8s;
+      }
+      .app-loading-viewtext-container span:nth-child(5) {
+        animation-delay: 1s;
+      }
+      .app-loading-viewtext-container span:nth-child(6) {
+        animation-delay: 1.2s;
+      }
+      .app-loading-viewtext-container span:nth-child(7) {
+        animation-delay: 1.4s;
+      }
+      .app-loading-viewtext-container span:nth-child(8) {
+        animation-delay: 1.6s;
+      }
+      .app-loading-viewtext-container span:nth-child(9) {
+        animation-delay: 1.8s;
+      }
+      .app-loading-viewtext-container span:nth-child(10) {
+        animation-delay: 2.0s;
+      }
+      .app-loading-viewtext-container span:nth-child(11) {
+        animation-delay: 2.2s;
+      }
+  
+      @keyframes loader {
+  
+        0%,
+        75%,
+        100% {
+          opacity: 0;
+          transform: rotateY(-90deg);
+        }
+  
+        25%,
+        50% {
+          opacity: 1;
+          transform: rotateY(0deg);
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/js/index-BdR_P0jW.js"></script>
+    <link rel="stylesheet" crossorigin href="/css/index-neJvLPw-.css">
+  </head>
+  <body>
+    <!-- <div id="app">
+      <div class="loader">
+        <div class="ball a"></div>
+        <div class="ball b"></div>
+        <div class="meter">
+          <div class="fill"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+              <path fill="currentColor" d="M0,128L34.3,138.7C68.6,149,137,171,206,176C274.3,181,343,171,411,154.7C480,139,549,117,617,144C685.7,171,754,245,823,234.7C891.4,224,960,128,1029,106.7C1097.1,85,1166,139,1234,165.3C1302.9,192,1371,192,1406,192L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+            </svg></div>
+          <span class="fill-text">Loading</span>
+        </div>
+      </div>
+    </div> -->
+
+    <div id="app" class="ma-ui">
+      <!-- <div class="app-loading">
+        <div class="app-loading__logo"><img src="/src/assets/images/avatar/passenger.png" width="120" /></div>
+        <div class="app-loading-text">
+          <span class="app-loading-preloader">云</span>
+          <span class="app-loading-preloader">上</span>
+          <span class="app-loading-preloader">数</span>
+          <span class="app-loading-preloader">字</span>
+          <span class="app-loading-preloader">旅</span>
+          <span class="app-loading-preloader">游</span>
+          <span class="app-loading-preloader">平</span>
+          <span class="app-loading-preloader">台</span>
+          <div class="app-loading-viewtext-container">
+            <span class="app-loading-viewtext">云</span>
+            <span class="app-loading-viewtext">上</span>
+            <span class="app-loading-viewtext">数</span>
+            <span class="app-loading-viewtext">字</span>
+            <span class="app-loading-viewtext">旅</span>
+            <span class="app-loading-viewtext">游</span>
+            <span class="app-loading-viewtext">平</span>
+            <span class="app-loading-viewtext">台</span>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <!-- <script src="/src/assets/loading/script.js"></script> -->
+  </body>
+</html>

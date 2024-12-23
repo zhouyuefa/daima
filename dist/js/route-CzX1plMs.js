@@ -1,0 +1,1 @@
+import{u as e}from"./index-BdR_P0jW.js";const n=e().getMenuList(),r=(e,t=n)=>{let l=null;for(const n of t)n.url===e?l=n:n.children&&n.children.length&&(l||(l=r(e,n.children)));return l};export{r as g};
